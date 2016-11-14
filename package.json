@@ -1,0 +1,10 @@
+{
+  "name": "slim-heaven",
+  "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcsuzanne/slim-heaven"
+  },
+  "author": "jean-christophe suzanne",
+  "license": "MIT"
+}

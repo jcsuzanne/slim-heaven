@@ -6,7 +6,7 @@ class PageController extends Controller {
 
     public function home()
     {
-        $this->__create($this->app,['tpl'=>'home','jscontroller'=>'home','meta'=>'home','metaDescription'=>'Home description']);
+        $this->__create($this->app,['tpl'=>'content/home','jscontroller'=>'home','metaTitle'=>'home','metaDescription'=>'Home description']);
     }
 
     public function __create($app,$configs)
@@ -14,7 +14,8 @@ class PageController extends Controller {
         $view = new \AppController\ViewController($app);
         $app->view->appendData(array(
           'app' => $app,
-          'viewData' => $view->viewData
+          'viewData' => $view->viewData,
+          'isMobile' => $view->viewData['isMobile']
         ));
         $dataToPass = $configs;
         $dataToPass['view'] = $app->view->fetch($configs['tpl'].'.php');
@@ -31,7 +32,7 @@ class PageController extends Controller {
             $xhr['view'] = $datasView['view'];
             echo json_encode($xhr);
         else:
-            $app->render($view->template.'layout.php', $datasView);
+            $app->render($view->template.'.php', $datasView);
         endif;
     }
 

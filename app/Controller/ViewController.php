@@ -18,7 +18,7 @@ class ViewController extends Controller {
     , 'manifest'     => array()
     , 'view'         => null
     );
-    public  $template = 'desktop/';
+    public  $template = 'templates/desktop';
     public  $isMobile = null; // user agent info
     public  $isMinify = '.min';
 
@@ -28,7 +28,7 @@ class ViewController extends Controller {
         // detection
         $this->viewData['isMobile'] = $this->isMobile ;
         if($this->app->detection->isMobile() && !$this->app->detection->isTablet()):
-            $this->template = 'mobile/';
+            $this->template = 'templates/mobile';
             $this->isMobile = true;
             $this->viewData['isMobile'] = $this->isMobile ;
         endif;
