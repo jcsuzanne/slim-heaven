@@ -1,1 +1,1 @@
-<script type="text/javascript" src="{{assetUrl}}assets/build/front{{isMinify}}.js"></script>
+<script type="text/javascript" src="{{assetUrl}}build/front{{isMinify}}.js"></script>

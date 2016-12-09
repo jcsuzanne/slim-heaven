@@ -12,7 +12,7 @@
 {{ include('partials/seo.php')}}
 {{ include('partials/favicon.php')}}
 {{ include('partials/assets.php')}}
-<link rel="stylesheet" type="text/css" href="{{assetUrl}}assets/build/front{{isMinify}}.css" media="all" />
+<link rel="stylesheet" type="text/css" href="{{assetUrl}}build/front{{isMinify}}.css" media="all" />
 {{ include('partials/analytics.php')}}
 </head>
 <body data-controller="{{jscontroller}}" data-method data-event>
