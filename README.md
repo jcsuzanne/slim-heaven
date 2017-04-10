@@ -74,9 +74,7 @@ Then, all the images, fonts and svgs are also there.
 
 **IMPORTANT**
 
-Most of the images used in the html code comes from my own Dropbox Public folder.
-You can download all the used images here
-https://dl.dropboxusercontent.com/u/28259730/hardwareclub.zip
+Generally, most of the images used in the html code comes from my own Dropbox Public folder.
 
 # INSTALLATION
 
